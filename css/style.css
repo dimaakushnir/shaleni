@@ -15901,6 +15901,7 @@ textarea {
 }
 .fullscreen__item_content {
   padding: 99px 0 0 0;
+  order: 1;
   display: flex;
   justify-content: center;
 }
@@ -15912,16 +15913,21 @@ textarea {
     justify-content: flex-start;
     align-items: center;
     padding: 0;
+    order: 2;
   }
   .fullscreen__item_content:not(:last-child) {
     margin: 0 0 0px 0;
   }
+}
+.fullscreen__item_title {
+  order: 2;
 }
 @media (max-width: 480.98px) {
   .fullscreen__item_title {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    order: 1;
   }
 }
 .fullscreen__content {
